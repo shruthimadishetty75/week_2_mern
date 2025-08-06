@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shruthi Madishetty Portfolio</title>
+  <style>
+    
+  </style>
+</head>
+<body style="font-family: Arial; background-color: #f2f2f2; padding: 20px;">
+
+  <h1 style="text-align: center; color: darkblue;">Shruthi Madishetty</h1>
+  <p style="text-align: center;">B.Tech CSE | Class of 2027</p>
+
+  <h2 style="color: #333;">About Me</h2>
+  <p>I am a passionate learner who enjoys designing and building innovative solutions using AI and embedded systems.</p>
+
+  <h2 style="color: #333;">Skills</h2>
+  <ul>
+    <li>Python</li>
+    <li>Java</li>
+    <li>HTML & CSS</li>
+    <li>Presentation Design</li>
+    <li>Embedded Systems</li>
+  </ul>
+
+  <h2 style="color: #333;">Projects</h2>
+  <ul>
+    <li>Automated Guided Vehicle (AGV)</li>
+    <li>Blind Stick with Ultrasonic Sensor</li>
+    <li>ESP32-CAM Object Counter</li>
+    <li>Bidirectional Counter</li>
+  </ul>
+
+  <h2 style="color: #333;">Internship</h2>
+  <p>AIML Pvt. Ltd. – Embedded Systems Intern</p>
+
+  <h2 style="color: #333;">Certifications</h2>
+  <ul>
+    <li>Python using AI Workshop</li>
+    <li>Business Analyst - Simplilearn</li>
+    <li>Tata Imagination Challenge 2024</li>
+    <li>Face Recognition Hackathon (Microsoft)</li>
+  </ul>
+
+</body>
+</html>

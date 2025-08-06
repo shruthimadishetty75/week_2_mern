@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mountain Scene with Ground River & House</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #87ceeb; /* Sky blue */
+    }
+
+    /* Sun */
+    .sun {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, yellow, orange);
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    /* Mountains */
+    .mountain {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        z-index: 2;
+    }
+    .big {
+        border-bottom: 300px solid #654321;
+        bottom: 200px;
+    }
+    .small {
+        border-bottom: 200px solid #7b4b2a;
+        bottom: 200px;
+    }
+
+    .mountain1 { left: -50px; }
+    .mountain2 { left: 200px; }
+    .mountain3 { left: 500px; }
+    .mountain4 { left: 750px; }
+
+    /* Grass */
+    .grass {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        background: #228B22;
+        z-index: 1;
+    }
+
+    /* River on the ground */
+    .river {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 500px;
+        height: 200px;
+        background: #1e90ff;
+        z-index: 2;
+
+        /* Perspective river shape */
+        clip-path: polygon(
+            48% 0%,   /* narrow start between mountains */
+            52% 0%,   /* narrow start */
+            100% 100%, /* wide bottom right */
+            0% 100%   /* wide bottom left */
+        );
+    }
+
+    /* Clouds */
+    .cloud {
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 40px 20px white, 80px 30px white, 60px 10px white;
+    }
+    .cloud1 { width: 100px; height: 60px; top: 50px; left: 100px; }
+    .cloud2 { width: 120px; height: 70px; top: 100px; left: 400px; }
+
+    /* House */
+    .house {
+        position: absolute;
+        bottom: 200px; /* sits on the grass */
+        right: 80px; /* beside first mountain */
+        width: 100px;
+        height: 80px;
+        background: #8B4513; /* brown walls */
+        z-index: 3;
+    }
+    /* Roof */
+    .roof {
+        position: absolute;
+        top: -50px;
+        left: -10px;
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 50px solid #B22222; /* red roof */
+    }
+    /* Door */
+    .door {
+        position: absolute;
+        bottom: 0;
+        left: 35px;
+        width: 30px;
+        height: 50px;
+        background: #654321;
+    }
+</style>
+</head>
+<body>
+    <!-- Clouds -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+
+    <!-- Sun -->
+    <div class="sun"></div>
+
+    <!-- Mountains -->
+    <div class="mountain big mountain1"></div>
+    <div class="mountain big mountain2"></div>
+    <div class="mountain small mountain3"></div>
+    <div class="mountain small mountain4"></div>
+
+    <!-- House -->
+    <div class="house">
+        <div class="roof"></div>
+        <div class="door"></div>
+    </div>
+
+    <!-- Grass -->
+    <div class="grass"></div>
+
+    <!-- River -->
+    <div class="river"></div>
+</body>
+</html>
